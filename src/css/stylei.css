@@ -56,7 +56,15 @@
 .home {
   padding: 211px 0 81px;
   background: url("../images/Home.png") no-repeat;
+  position: relative;
 }
+.home__img::before {
+  content: url("../images/Home-bmw.png");
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
 .home__title {
   font-size: 44px;
   line-height: 96.5%;
@@ -106,4 +114,15 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
+}
+
+.card__section {
+  padding: 100px 0;
+}
+.card__title {
+  font-size: 35px;
+  line-height: 96.5%;
+}
+.card__content {
+  margin: 70px 0 60px;
 }
